@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.route('/').get((req, res) => {
-  res.render("index", {
+  res.render('index', {
     title: "Welcome to FCC",
     message: "Pug is working!",
     showLogin: true,
