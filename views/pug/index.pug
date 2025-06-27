@@ -1,12 +1,10 @@
 html
   head
-    title= title
+    script(type='text/javascript').
+    if (foo) bar(1 + 5);
+      console.log('This is a script block in Pug');
   body
-    h1= message
-
-    if showLogin
-      p Login form here
-    if showRegistration
-      p Registration form here
-    if showSocialAuth
-      p Social auth options here
+    if youAreUsingPug
+      p You are amazing
+    else
+      p Get on it!
