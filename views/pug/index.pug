@@ -1,10 +1,6 @@
 html
   head
-    script(type='text/javascript').
-    if (foo) bar(1 + 5);
-      console.log('This is a script block in Pug');
+    title= title
   body
-    if youAreUsingPug
-      p You are amazing
-    else
-      p Get on it!
+    h1= message
+    p This is a Pug template.
